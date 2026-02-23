@@ -1,11 +1,19 @@
 import Titulo from '../../components/Titulo'
-import { SidebarContainer } from './styles' // Importe o estilo novo
+import Paragrafo from '../../components/Paragrafo'
+import Avatar from '../../components/Avatar'
+import { Descricao, BotaoTema } from './styles'
+import { SidebarContainer } from './styles'
 
 const Sidebar = () => (
-    <SidebarContainer>
-        <img src="https://github.com/TAYLUNGpgrm.png" alt="TAYLUNGpgrm-Perfil" />
-        <Titulo fontSize={20}>Álef Dutra</Titulo>
-    </SidebarContainer>
+    <aside>
+        <SidebarContainer>
+            <Avatar />
+            <Titulo fontSize={20}>Álef Dutra</Titulo>
+            <Paragrafo tipo="secundario" fontSize={16}>TAYLUNGpgrm</Paragrafo>
+            <Descricao tipo="principal" fontSize={12}>Engenheiro Front-end</Descricao>
+            <BotaoTema>Trocar tema</BotaoTema>
+        </SidebarContainer>
+    </aside>
 )
 
 export default Sidebar

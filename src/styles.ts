@@ -6,10 +6,13 @@ const EstiloGlobal = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
     body {
         padding-top: 80px;
+        padding-bottom: 80px;
 
         @media (max-width: 768px) {
             padding-top: 16px;
@@ -32,8 +35,4 @@ export const Container = styled.div`
     max-width: 80%;
     display: block;
   }
-
-    img {
-    max-width: 100px
-    }
 `;

@@ -1,25 +1,23 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { P } from "../../components/Paragrafo/styles"
 
-export const SidebarContainer = styled.aside`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Alinhamento padrão no desktop */
-
-  img {
-    width: 100%; /* No desktop ele segue o container de 128px */
-    height: auto;
-    display: block;
-    margin-bottom: 24px;
-    border-radius: 8px;
-  }
-
-  @media (max-width: 768px) {
-    align-items: center; /* Centraliza imagem e texto no mobile */
+export const Descricao = styled(P)`
+    margin-top: 24px;
     margin-bottom: 40px;
+`
 
-    img {
-      width: 180px; /* Aumenta o tamanho da foto de perfil no mobile */
-      margin-bottom: 16px;
-    }
-  }
-`;
+export const BotaoTema = styled.button`
+    border-radius: 12px;
+    padding: 8px;
+    color: #eee;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #282a35;
+    cursor: pointer;
+`
+
+export const SidebarContainer = styled.div`
+    position: sticky;
+    top: 80px;
+    left: 0;
+`

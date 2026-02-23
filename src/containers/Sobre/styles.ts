@@ -8,7 +8,7 @@ export const GithubSecao = styled.div`
 
   img {
       height: auto;     /* Remove a trava de altura */
-      width: 80%;      /* Força a imagem a ocupar 100% da largura do pai */
+      width: 100%;      /* Força a imagem a ocupar 100% da largura do pai */
       max-width: 100%;  /* Garante que ela não ultrapasse o limite */
       object-fit: contain; /* Mantém a proporção sem cortar nada */
 
